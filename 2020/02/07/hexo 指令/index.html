@@ -16,7 +16,7 @@
 <meta property="og:description" content="欢迎来到Hexo! 这是我的第一篇文章. 查看 文档 以获得更多信息. 如果在使用Hexo时遇到任何问题, 可以在 疑难解答中找到答案 ，也可以在 GitHub上询问.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-07T09:22:51.000Z">
-<meta property="article:modified_time" content="2020-02-12T10:48:35.396Z">
+<meta property="article:modified_time" content="2020-02-12T11:49:32.331Z">
 <meta property="article:author" content="熟人语">
 <meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
@@ -200,7 +200,9 @@
       
         <p>欢迎来到<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! 这是我的第一篇文章. 查看 <a href="https://hexo.io/docs/" target="_blank" rel="noopener">文档</a> 以获得更多信息. 如果在使用Hexo时遇到任何问题, 可以在 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">疑难解答</a>中找到答案 ，也可以在 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>上询问.</p>
 <a id="more"></a>
-<h2 id="更新相册图片"><a href="#更新相册图片" class="headerlink" title="更新相册图片"></a>更新相册图片</h2><p>1.进入图片文件夹中（即Blog-Back-Up-master文件夹中）使用tool.py脚本处理图片。<br>2.在本地的博客目录下，打开git，将文件部署到github中。<br>3.以后每次在Blog-Back-Up-master\photos中添加图片后，重复上述就可以完成部署到github了。</p>
+<h2 id="更新相册图片"><a href="#更新相册图片" class="headerlink" title="更新相册图片"></a>更新相册图片</h2><p>1.在Blog-Back-Up-master\photos中添加新图片<br>2.进入图片文件夹中（即Blog-Back-Up-master文件夹中）使用tool.py脚本处理图片。<br>3.在Blog-Back-Up-master打开Git输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add . （git add -A） （把该文件夹中所有的东西加载到本地仓库里）</span><br><span class="line">$ git commit -m “<span class="built_in">test</span>”    （提交信息）</span><br><span class="line">$ git push photo master  （将文件提交到github仓库）</span><br></pre></td></tr></table></figure>
+<p>4.在本地的博客目录下，打开git，将文件部署到github中。<br>5.以后每次在Blog-Back-Up-master\photos中添加图片后，重复上述就可以完成部署到github了。</p>
 <h2 id="将文件部署到github中"><a href="#将文件部署到github中" class="headerlink" title="将文件部署到github中"></a>将文件部署到github中</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean            清除数据库之类</span><br><span class="line">$ hexo g               生成静态网站</span><br><span class="line">$ hexo d               将现在的文件部署到github中</span><br></pre></td></tr></table></figure>
 <h2 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
